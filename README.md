@@ -5,6 +5,8 @@ Dieses Repository enthält eine Anwendung zur Leistungsanalyse, die in Python en
 # Installation
 Um die Anwendung auszuführen, müssen Sie Python installiert haben. Sie können Python von der offiziellen Python-Website herunterladen und installieren.
 
+https://www.python.org/
+
 # Einrichten der virtuellen Umgebung
 Es wird empfohlen, eine virtuelle Umgebung für die Installation der erforderlichen Pakete zu verwenden. Führen Sie dazu die folgenden Befehle aus:
 
