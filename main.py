@@ -16,6 +16,6 @@ P_date = datetime.today().strftime("%Y-%m-%d")
 P_supervisor = input("Geben sie den Namen des Experimentleiters ein --> ")
 P_subject = input("Geben sie den Namen des Versuchskaninchens ein --> ")
 
-E1 = build_experiment(P_experiment_name,P_date,P_supervisor,P_subject)E
+E1 = build_experiment(P_experiment_name,P_date,P_supervisor,P_subject)
 print(P1)
 print(E1)
