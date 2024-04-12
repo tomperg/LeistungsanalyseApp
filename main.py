@@ -19,3 +19,11 @@ P_subject = input("Geben sie den Namen des Versuchskaninchens ein --> ")
 E1 = build_experiment(P_experiment_name,P_date,P_supervisor,P_subject)
 print(P1)
 print(E1)
+
+import json 
+
+
+# Convert and write JSON object to file
+with open("save.json", "a+") as outfile: 
+    json.dump(E1, outfile)
+    json.dump(P1, outfile)
