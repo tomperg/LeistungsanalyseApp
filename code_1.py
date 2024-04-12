@@ -1,6 +1,0 @@
-print("Hello")
-print("Wow") 
-print("Hallöchen")
-print("Hello") 
-print("Endlich")
-print("Super")
