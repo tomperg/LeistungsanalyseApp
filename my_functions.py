@@ -1,3 +1,4 @@
+import json
 def estimate_max_hr(age_years : int , sex : str) -> int:
   """
   See https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4124545/ Titel anhand dieser PMC-ID in Citavi-Projekt übernehmen for different formulas
@@ -27,3 +28,8 @@ def build_experiment(experiment_name, date, supervisor, subject) -> dict:
             "subject" :   subject
             }
     return dict
+
+def save_json(b):
+   with open("save.json", "a+") as outfile: 
+    json.dump(b, outfile)
+    
