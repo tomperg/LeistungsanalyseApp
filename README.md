@@ -13,3 +13,7 @@ Es wird empfohlen, eine virtuelle Umgebung für die Installation der erforderlic
 pyton -m venv .venv
 
 Um diese Umgebung zu aktivieren, geben sie nun 
+
+
+# Seperate Branch:
+Thomas 
