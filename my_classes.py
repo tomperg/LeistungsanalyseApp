@@ -3,7 +3,6 @@ from my_functions import save_json,estimate_max_hr
 
 class Person:
     
-
     def __init__(self, first_name, last_name, sex, age, estimate_max_hr):
         self.first_name = first_name
         self.last_name = last_name
@@ -28,7 +27,6 @@ class Person:
             max_hr_bpm  = input("Enter maximum heart rate:")
         return int(max_hr_bpm)
         
-
 
     def save(self):
         save_json(self.__dict__)

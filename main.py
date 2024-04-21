@@ -35,7 +35,7 @@ E1 = Experiment(P_experiment_name, P_date, P_supervisor, P_subject)
 #print(E1)
 
 Experiment.save(E1)
-Experiment.save(P1)
+Person.save(P1)
 
 
 # Convert and write JSON object to file
