@@ -27,3 +27,10 @@ def build_experiment(experiment_name, date, supervisor, subject) -> dict:
             "subject" :   subject
             }
     return dict
+
+import json
+
+
+def save_json(b):
+   with open("save.json", "a+") as outfile: 
+    json.dump(b, outfile)

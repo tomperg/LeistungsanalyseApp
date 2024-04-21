@@ -12,7 +12,7 @@ P_Age = int(input("Geben sie ihr Alter ein (naturliche Zahlen)--> "))
 P_Sex = input("Geben sie ihre Geschlecht ein (male/female) --> ")
 Age_Years = P_Age
 
-P_estimate_mx_hr = Person.estimate_max_hr(Age_Years,P_Sex)
+P_estimate_max_hr = Person.estimate_max_hr(Age_Years,P_Sex)
 
 #P1 = build_person(P_First_Name,P_Last_name,P_Sex,P_Age) --> altes Format
 
