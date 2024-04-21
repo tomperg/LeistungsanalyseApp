@@ -1,7 +1,7 @@
 from my_functions import build_experiment, build_person, estimate_max_hr
 from datetime import datetime
 from my_classes import Person
-from my_classes import Ecperiment
+from my_classes import Experiment
 import json
 
 #Variablen für build_person
