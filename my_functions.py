@@ -30,6 +30,7 @@ def build_experiment(experiment_name, date, supervisor, subject) -> dict:
     return dict
 
 def save_json(b):
-   with open("save.json", "a+") as outfile: 
-    json.dump(b, outfile)
+   with open("save.json", "a") as outfile: 
+    json_object=json.dumps(b, indent=4)
+    outfile.write(json_object+ "\n")
     
