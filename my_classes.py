@@ -1,24 +1,43 @@
 from my_functions import save_json,estimate_max_hr
+import json
 
 
-class Person:
-    
-    def __init__(self, first_name, last_name, sex, age, estimate_max_hr):
+class Person():
+    def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
+        
+        self.__dict__={
+            "first_name" : self.first_name,
+            "last_name" : self.last_name
+        }
+
+    def save(self):
+        with open("person.json", "w") as f:
+            json.dump(self.__dict__, f)
+
+
+
+class Subject(Person):
+
+    def __init__(self, first_name, last_name, sex, age, estimate_max_hr, birth_date):
+        super().__init__(first_name, last_name)
+
         self.sex = sex
         self.age = age
         self.estimate_max_hr = estimate_max_hr
-        self.__dict__={
+        self.__birth_date__ = birth_date
+        self.__dict__ = {
             "first_name": self.first_name,
             "last_name": self.last_name,
             "sex": self.sex,
             "age": self.age,
-            "max_hr": self.estimate_max_hr
+            "max_hr": self.estimate_max_hr,
+            "birthdate": self.__birth_date__
         }
     
     def estimate_max_hr(age_years : int , sex : str) -> int:
-  
+
         if sex == "male":
             max_hr_bpm =  223 - 0.9 * age_years
         elif sex == "female":
@@ -26,13 +45,21 @@ class Person:
         else:
             max_hr_bpm  = input("Enter maximum heart rate:")
         return int(max_hr_bpm)
-        
-
+    
     def save(self):
-        save_json(self.__dict__)
+        with open("person.json", "w") as f:
+            json.dump(self.__dict__, f)
 
+class Supervisor(Person):
 
-       
+    def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
+
+        self.__dict__ = {
+            "first_name" : self.first_name,
+            "last_name" : self.last_name,
+           
+    }
 
 
 class Experiment:
@@ -49,4 +76,5 @@ class Experiment:
         }
 
     def save(self):
-       save_json(self.__dict__)
+       with open("experiment.json", "w") as f:
+        json.dump(self.__dict__, f)
