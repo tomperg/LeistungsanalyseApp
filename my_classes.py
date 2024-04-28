@@ -1,4 +1,4 @@
-from my_functions import save_json,estimate_max_hr
+from my_functions import save_json, estimate_max_hr
 import json
 
 
@@ -13,8 +13,7 @@ class Person():
         }
 
     def save(self):
-        with open("person.json", "w") as f:
-            json.dump(self.__dict__, f)
+        save_json(self.__dict__)
 
 
 
@@ -47,8 +46,7 @@ class Subject(Person):
         return int(max_hr_bpm)
     
     def save(self):
-        with open("person.json", "w") as f:
-            json.dump(self.__dict__, f)
+        save_json(self.__dict__)
 
 class Supervisor(Person):
 
@@ -61,6 +59,8 @@ class Supervisor(Person):
            
     }
 
+    def save(self):
+        save_json(self.__dict__)
 
 class Experiment:
     def __init__(self, name, date, supervisor, subject):
@@ -76,5 +76,4 @@ class Experiment:
         }
 
     def save(self):
-       with open("experiment.json", "w") as f:
-        json.dump(self.__dict__, f)
+        save_json(self.__dict__)

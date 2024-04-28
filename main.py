@@ -26,7 +26,7 @@ P_experiment_name = input("Geben sie den Namen des Experimentes ein --> ")
 P_date = datetime.today().strftime("%Y-%m-%d")
 
 
-E1 = Experiment(P_experiment_name, P_date, Versuchsleiter.__dict__, Person1.__dict__)
+E1 = Experiment(P_experiment_name, P_date, Versuchsleiter.__dict__, Subject1.__dict__)
 
 
 
