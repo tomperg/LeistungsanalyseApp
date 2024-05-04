@@ -14,4 +14,8 @@ pyton -m venv .venv
 
 Um diese Umgebung zu aktivieren, geben sie nun 
 
+python main.py 
+
+ein
+
 Dies ist der Branch von Eric Janke

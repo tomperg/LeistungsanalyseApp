@@ -9,11 +9,12 @@ P_Last_name = input("Geben sie den Nachnamen der Testperson ein --> ")
 P_Age = int(input("Geben sie das Alter der Tesperson ein (naturliche Zahlen)--> "))
 P_Birth_date = input("Geben sie das Geburtsdatum der Testperson ein YYYY-MM-DD -->")
 P_Sex = input("Geben sie das Geschlecht der Testperson ein (male/female) --> ")
+P_Email = input("Geben sie die Email der Testperson ein") 
 Age_Years = P_Age
 P_estimate_max_hr= subject.estimate_max_hr(Age_Years,P_Sex)
 
 P1 = Person(P_First_name,P_Last_name,P_Age)
-S1 = subject(P_First_name,P_Last_name, P_Age,P_Sex,P_estimate_max_hr,P_Birth_date)
+S1 = subject(P_First_name,P_Last_name, P_Age,P_Sex,P_estimate_max_hr,P_Birth_date,P_Email)
 
 P_First_name_SP= input("Geben sie den Vornamen des Versuchleiters ein --> ") 
 P_Last_name_SP = input("Geben sie den Nachnamen des Versuchleiters ein --> ") 

@@ -1,4 +1,6 @@
 from my_functions import save_json,estimate_max_hr
+import requests
+import json
 
 
 class Person:
@@ -18,21 +20,29 @@ class Person:
     def save(self):
         save_json(self.__dict__)
 
+    def put():
+        data= Person.__dict__.copy()
+        data_json=data_json = json.dumps(data)
+        url ="http://localhost:5000/"
+        requests.put(url, data=data_json)
+
 
        
 class subject(Person):
-    def __init__(self, first_name, last_name, age, sex, estimate_max_hr, __birth_date__):
+    def __init__(self, first_name, last_name, age, sex, estimate_max_hr, __birth_date__, email):
         super().__init__(first_name, last_name, age)
         self.sex = sex
         self.__birth_date__ = __birth_date__
         self.estimate_max_hr = estimate_max_hr
+        self.email=email
         self.__dict__={
             "first_name": self.first_name,
             "last_name": self.last_name,
             "sex": self.sex,
             "age": self.age,
             "max_hr": self.estimate_max_hr,
-            "birth_date": self.__birth_date__
+            "birth_date": self.__birth_date__,
+            "email": self.email
         }
     def estimate_max_hr(age_years : int , sex : str) -> int:
 

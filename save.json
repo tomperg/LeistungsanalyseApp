@@ -32,3 +32,20 @@
         "birth_date": "1955-11-11"
     }
 }
+{
+    "name": "Test",
+    "date": "2024-04-29",
+    "supervisor": {
+        "first_name": "Wer auch immer",
+        "last_name": "der auch immer",
+        "age": 55
+    },
+    "subject": {
+        "first_name": "Eric",
+        "last_name": "Janke",
+        "sex": "male",
+        "age": 19,
+        "max_hr": 205,
+        "birth_date": "2005-03-22"
+    }
+}
