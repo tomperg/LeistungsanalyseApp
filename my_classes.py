@@ -4,7 +4,7 @@ import requests
 
 ## Update a person
 # Define the URL of the API
-url = "http://127.0.0.1:5000/person/Testname2"
+#url = "http://127.0.0.1:5000/person/Testname2"
 
 class Person():
     def __init__(self, first_name, last_name):
@@ -23,7 +23,7 @@ class Person():
 
         ## Update a person
         # Define the URL of the API
-        url = "http://localhost:5000"
+        url = "http://127.0.0.1:5000/person/Testname2"
 
         data = Person.__dict__.copy
 
@@ -61,7 +61,7 @@ class Subject(Person):
     def update_email(self):
         ## Update a person
         # Define the URL of the API
-        url = "http://localhost:5000"
+        url = "http://127.0.0.1:5000/person/Testname2"
 
         # Define the data you want to send
         data = {
